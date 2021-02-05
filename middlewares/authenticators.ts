@@ -1,7 +1,5 @@
 import { Base64, Context } from "../deps.ts";
-
 import { AUTH_STATUS } from "../util/interfaces.ts";
-
 import { verifyToken } from "../util/jwt.ts";
 import { User } from "../models/User.ts";
 

@@ -1,5 +1,4 @@
 import { Database, MySQLConnector } from "../deps.ts";
-
 import models from "../models/index.ts";
 import { DB_CONNECT_OPTION } from "../config.ts";
 

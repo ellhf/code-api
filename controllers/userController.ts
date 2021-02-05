@@ -1,5 +1,4 @@
 import { Context } from "../deps.ts";
-
 import { User } from "../models/User.ts";
 
 export default {

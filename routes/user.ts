@@ -1,5 +1,4 @@
 import { Router } from "../deps.ts";
-
 import userController from "../controllers/userController.ts";
 import { dataOrMessage, paramsParser } from "../middlewares/index.ts";
 

@@ -1,5 +1,4 @@
 import { Application } from "./deps.ts";
-
 import { bodyParser } from "./middlewares/index.ts";
 import { APP_PORT, DB_INIT_DROP } from "./config.ts";
 import { initDB } from "./util/db.ts";

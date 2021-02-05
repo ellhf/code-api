@@ -1,5 +1,4 @@
 import { create, Payload, verify } from "../deps.ts";
-
 import { JWT_ALGORITHM, JWT_HEADER, JWT_SECRET } from "../config.ts";
 
 export async function createToken(payload: Payload) {
