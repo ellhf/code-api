@@ -1,7 +1,4 @@
-import {
-  Context,
-  helpers,
-} from "../deps.ts";
+import { Context, helpers } from "../deps.ts";
 
 import { AUTH_STATUS } from "../util/interfaces.ts";
 
@@ -26,10 +23,15 @@ export function paramsParser() {
   };
 }
 
-export async function authenticationParser(ctx: Context, next: () => Promise<void>) {
-  const [ type, authStr ] = ctx.request.headers.get('Authorization')?.split(' ') ?? [];
-  if (type && authStr)
-    ctx.state.auth = { type, authStr, status: AUTH_STATUS.UNAUTHENTICATED }
+export async function authenticationParser(
+  ctx: Context,
+  next: () => Promise<void>,
+) {
+  const [type, authStr] =
+    ctx.request.headers.get("Authorization")?.split(" ") ?? [];
+  if (type && authStr) {
+    ctx.state.auth = { type, authStr, status: AUTH_STATUS.UNAUTHENTICATED };
+  }
   await next();
   delete ctx.state.auth;
 }

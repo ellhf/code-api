@@ -1,14 +1,12 @@
-import {
-  Router
-} from "../deps.ts";
+import { Router } from "../deps.ts";
 
 import sessionController from "../controllers/sessionController.ts";
 
 import {
-  dataOrMessage,
   authenticationParser,
   basicAuthenticator,
-  bearerAuthenticator
+  bearerAuthenticator,
+  dataOrMessage,
 } from "../middlewares/index.ts";
 
 const router = new Router();

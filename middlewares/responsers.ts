@@ -1,6 +1,4 @@
-import {
-  Context,
-} from "../deps.ts";
+import { Context } from "../deps.ts";
 
 export async function dataOrMessage(ctx: Context, next: () => Promise<void>) {
   const { state, response } = ctx;

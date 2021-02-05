@@ -9,7 +9,11 @@ export default {
       const iat = Math.floor(+new Date() / 1000);
       const exp = iat + 3600;
       const token = await createToken({
-        id, username, aliasname, iat, exp
+        id,
+        username,
+        aliasname,
+        iat,
+        exp,
       });
       ctx.state.data = token;
     }
